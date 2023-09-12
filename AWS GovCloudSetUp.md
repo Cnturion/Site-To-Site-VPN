@@ -32,3 +32,6 @@ This EC2 Intance will be used to tst the connectivity of the two networks, the G
 ![Screenshot 2023-09-12 at 4 43 01 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/6489c2b8-237c-4858-8759-2dd2c3c5522f)
 
 9. Launch Instance
+
+# Virtual Private Network: Customer Gateway
+
