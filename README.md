@@ -5,4 +5,4 @@ Recently, I was presented with a challenge that initially seemed like an easy ta
 
 First, I would like to thank the AWS community for their participation in helping me find a solution to this challenge and their mentorship.
 
-https://github.com/Cnturion/Site-To-Site-VPN/blob/main/S2S%20VPN%20Demo.jpg
+![S2S VPN Demo](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/e0f62df2-491e-4c89-aeb5-81317a3fe53c)
