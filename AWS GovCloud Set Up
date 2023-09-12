@@ -1,6 +1,6 @@
-# AWS GovCloud or AWS Cloud connecting to on-prem infrastructure
+#AWS GovCloud or AWS Cloud connecting to on-prem infrastructure
 
-# Setting up a VPC
+#Setting up a VPC
 
 In the AWS GovCloud I will create a Virtual Private Cloud (VPC) with public and private subnet. 
 
