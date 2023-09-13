@@ -35,7 +35,7 @@ In the Security groups section, click on Create new security group.
 In the Create security group dialog box, enter the following details:
 
     Name: Test Security Group
-    Description: This is a security group for the Test Instance
+    Description: Allow SSH and ICMP
     VPC: Select the VPC that you created in the previous step.
 
 ![Screenshot 2023-09-12 at 4 43 01 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/8bc9df07-e37e-4bac-a20d-d71b790aaec5)
