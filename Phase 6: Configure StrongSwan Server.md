@@ -90,5 +90,43 @@ Step 11: Repeat Step 8 and 9 to set up "Conn Tunnel2" (Optional)
 
 ![Screenshot 2023-09-13 at 3 24 06 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/650c99cd-fde8-47e5-af64-50d56bc0ebc7)
   
+Step 12: Save the file.
 
-  
+# Create a Tunnel Heartbeat
+
+The AWS configuration file states that it is recommended to have a heartbeat that periodically pings the remote endpoint's inside IP to keep the tunnel active.
+
+Step 1: Create a file named "heartbeat.sh"
+
+	sudo nano heartbeat.sh
+
+Step 2: Input the following:
+
+	#!/bin/bash
+
+	while true; do
+		ping -c 1 $1 &> /dev/null
+		ping -c 1 $2 &> /dev/null
+		sleep 5
+	done
+
+Step 3: Save the file
+
+Step 4: Run the following command to execute the script
+
+  	sudo chmod 744 heartbeat.sh
+
+Step 5: insert:
+
+   	./heartbeat.sh <REMOTE_INSIDE_IP_1> <REMOTE_INSIDE_IP_2> &
+
+    Remote inside IP 1 & 2 can be found in the S2S VPN under "Tunnel Details"
+
+
+<img width="1223" alt="Screenshot 2023-09-13 at 3 34 35 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/ba6465ad-ed05-4ac2-8116-36f4b16e97f1">
+
+
+# Automate Tunnel Healthcheck and Failover
+
+
+
