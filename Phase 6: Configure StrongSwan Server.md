@@ -241,7 +241,7 @@ Step 3: Make the following configuration under add_route() line
     	for i in "${route[@]}"; do
 	    ip route add ${i} dev ${TUNNEL_NAME} metric ${TUNNEL_MARK}
 
-     	To:
+	To:
 
       	add_route() {
 	IFS=',' read -ra route <<< "${TUNNEL_STATIC_ROUTE}"
