@@ -111,12 +111,15 @@ In the Associate Elastic IP address dialog box, do the following:
 
     Instance: Select the EC2 instance that is running the StrongSwan server.
     
-<img width="829" alt="Screenshot 2023-09-13 at 12 37 08 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/0c804665-1bad-4db7-844a-ba09987d478a">
+<img width="829" alt="Screenshot 2023-09-13 at 12 37 08 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/e675fbc7-0f50-4b8c-b841-4248c444b07d">
 
 Click on the Associate button.
 
 Step 6: Verify the association
 
 Once the Elastic IP address has been associated with the EC2 instance, you can verify the association by clicking on the Elastic IP address. The Instance field will show the EC2 instance that the Elastic IP address is associated with.
+
+<img width="1228" alt="Screenshot 2023-09-13 at 12 40 09 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/8a2ccc0d-d4c9-4f5b-a11e-45a6f6f31f28">
+
 
 That's it! You have successfully created an Elastic IP address and associated it with the StrongSwan Ubuntu server, selecting Amazon's pool of IPv4 addresses.
