@@ -1,1 +1,0 @@
-# Configure StrongSwan Server
