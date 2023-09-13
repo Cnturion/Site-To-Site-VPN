@@ -92,6 +92,8 @@ Step 11: Repeat Step 8 and 9 to set up "Conn Tunnel2" (Optional)
   
 Step 12: Save the file.
 
+Step 13: Repeat Step 10 and add the PSK key for tunnel2. This key is also provided in the S2S configuration file. 
+
 # Create a Tunnel Heartbeat
 
 The AWS configuration file states that it is recommended to have a heartbeat that periodically pings the remote endpoint's inside IP to keep the tunnel active.
