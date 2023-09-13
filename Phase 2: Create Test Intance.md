@@ -38,7 +38,7 @@ In the Create security group dialog box, enter the following details:
     Description: Allow SSH and ICMP
     VPC: Select the VPC that you created in the previous step.
 
-![Screenshot 2023-09-12 at 4 43 01 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/8bc9df07-e37e-4bac-a20d-d71b790aaec5)
+![Screenshot 2023-09-12 at 4 43 01 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/67b1db26-34d7-4ab4-90ac-1460eb494183)
 
 Click on the Review and Launch button.
 
