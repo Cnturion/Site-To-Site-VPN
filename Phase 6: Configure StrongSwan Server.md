@@ -292,4 +292,6 @@ If your tunnels are down check the following:
 
    		sudo ipsec status
 
+7. Verify your Source and Destination check configuration in the StrongSwan EC2 Instance is set to "Stop"
+
 Changes made in these previous steps can take a few minutes to apply and for your tunnels to change status.
