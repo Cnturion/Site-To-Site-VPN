@@ -1,5 +1,6 @@
+# Setting up a Test-Instance
 
-
+This EC2 Intance will be used to tst the connectivity of the two networks, the GovCloud and AWS commercial cloud. 
 
 Step 1: Go to the AWS Console
 
@@ -21,6 +22,8 @@ Step 5: Choose a key pair
 
 In the Key pair section, select an existing key pair or create a new one. If you are creating a new key pair, make sure to download the private key file. You will need this file to connect to your EC2 instance.
 
+![Screenshot 2023-09-12 at 4 33 45 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/4768282a-bde8-4704-8b04-feaaf789c8ab)
+
 Step 6: Configure network settings
 
 In the Network settings section, select the VPC that you created in the previous step. You should also select the public subnet for this instance.
@@ -34,6 +37,8 @@ In the Create security group dialog box, enter the following details:
     Name: Test Security Group
     Description: This is a security group for the Test Instance
     VPC: Select the VPC that you created in the previous step.
+
+![Screenshot 2023-09-12 at 4 43 01 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/8bc9df07-e37e-4bac-a20d-d71b790aaec5)
 
 Click on the Review and Launch button.
 
