@@ -47,3 +47,35 @@ For a quick rundown on a S2S VPN please refer to https://docs.aws.amazon.com/vpn
 An AWS Customer Gateway is a virtual representation of a physical or software device that you own and operate in your on-premises network. It is used to create a secure connection between your network and an Amazon Virtual Private Cloud (VPC).
 
 When you create an AWS Customer Gateway, you provide information about your device to AWS, such as its public IP address and its BGP ASN. You also need to configure your device to work with the AWS Site-to-Site VPN connection.
+
+Step 1: Go to the AWS Console
+
+Log in to the AWS Console and navigate to the VPC service.
+
+Step 2: Click on Customer gateways
+
+In the left navigation pane, click on Customer gateways.
+
+Step 3: Click on Create customer gateway
+
+Click on the Create customer gateway button.
+
+Step 4: Enter the customer gateway details
+
+In the Create customer gateway dialog box, enter the following details:
+
+    Name: California StrongSwan Server-CGW
+    IP address: 54.176.218.164
+    BGP ASN: 65000
+
+Leave all other settings as default.
+
+Step 5: Click on Create
+
+Click on the Create button.
+
+AWS will create the customer gateway. This may take a few minutes.
+
+Step 6: Verify the customer gateway
+
+Once the customer gateway is created, you can verify it by clicking on the customer gateway name. The customer gateway details will be displayed.
