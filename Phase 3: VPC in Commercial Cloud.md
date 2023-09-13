@@ -38,7 +38,7 @@ The VPC you are creating will create a virtual private cloud (VPC) in the AWS cl
 
 The VPC will have the following features:
 
-    A private IP address space: The VPC will have a private IP address space that is not accessible from the public internet.
-    Subnets: The VPC will have subnets, which are smaller networks within the VPC. You can use subnets to group your AWS resources together.
-    Route tables: The VPC will have route tables, which control how traffic is routed within the VPC.
-    Security groups: The VPC will have security groups, which control which traffic is allowed to reach your AWS resources.
+A private IP address space: The VPC will have a private IP address space that is not accessible from the public internet.
+Subnets: The VPC will have subnets, which are smaller networks within the VPC. You can use subnets to group your AWS resources together.
+Route tables: The VPC will have route tables, which control how traffic is routed within the VPC.
+Security groups: The VPC will have security groups, which control which traffic is allowed to reach your AWS resources.
