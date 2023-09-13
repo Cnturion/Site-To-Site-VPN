@@ -2,7 +2,7 @@
 
 # Setting up a VPC
 
-In the AWS GovCloud I will create a Virtual Private Cloud (VPC) with public and private subnet. 
+In the AWS GovCloud I will create a Virtual Private Cloud (VPC) with public and private subnets. 
 
 Step 1: Go to the AWS Console
 
