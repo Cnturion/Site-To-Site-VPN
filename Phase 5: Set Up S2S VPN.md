@@ -85,6 +85,22 @@ Step 5: Click on the Attach to VPC button.
 
 Once the VGW has been attached to the VPC, you can verify the association by clicking on the VGW. The VPC field will show the VPC that the VGW is associated with.
 
+# Enable Route Propagation
+
+Enable route propagation in the VPC.
+
+Step 1: Select Route Tables in the left hand side under "Virtual pivate cloud"
+
+Step 2: Select the Route Table associated with the public subnets.
+
+Step 3: Select "Route Propagation"
+
+Step 4: Select "Edit route propagation" 
+
+Step 5: Check the "Enable" box
+
+Step 6: Save
+
 # Create a Site-to-Site VPN connection
 
 Step 1: Go to the AWS Console and navigate to the Site-to-Site VPN service.
