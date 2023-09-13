@@ -67,6 +67,28 @@ Review the instance launch details and make sure that they are correct. If they 
 
 AWS will launch the EC2 instance. This may take a few minutes.
 
+# Stop Source and Destination Checks
+
+Source and destination checks are a security feature that is enabled by default on EC2 instances. These checks ensure that traffic only originates from and terminates at the instance. Since we will be allowing traffic to flow through this StrongSwan server, some of the traffic won't originate from here, therefore, we are stoping the source and destination checks. 
+
+Step 1: Go to the AWS Console and navigate to the EC2 service.
+
+Step 2: In the left navigation pane, click on Instances.
+
+Step 3: Select the StrgonSwan Server EC2 instance.
+
+Setp 4:Click on the Actions menu and select Instance settings.
+
+Setp 5: In the Instance settings dialog box, scroll down to the "netowrking" section and expand the Source/destination checks section.
+
+Step 6: Check the "Stop" checkbox.
+
+Step 7: Click on the Save button.
+
+<img width="1245" alt="Screenshot 2023-09-13 at 1 37 25 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/b0aac23c-707e-42f6-bcb1-552c57a11532">
+
+<img width="612" alt="Screenshot 2023-09-13 at 1 37 34 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/a814f004-bf8c-4f89-b527-4b27b46f5bf3">
+
 # OPTIONAL: Set up an Elastic IP for StrongSwan
 
 An AWS Elastic IP address is a static IP address that can be assigned to an AWS resource, such as an EC2 instance or a load balancer. Elastic IP addresses are useful for applications that need to be accessible from the internet, such as a web server or a VPN server.
