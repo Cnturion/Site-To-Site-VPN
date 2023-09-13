@@ -110,3 +110,22 @@ Step 4: In the Create Site-to-Site VPN Connection dialog box, enter the followin
 Step 5: Click on the Create button.
 
 Once the Site-to-Site VPN connection has been created, you can verify the connection by connecting to the StrongSwan server from your on-premises network.
+
+# Download S2S VPN Configurations file
+
+Step 1: Select the S2S VPN created 
+
+Step 2: Click on "Download configuration"
+
+Step 3: Selec the following:
+
+        Vendor: StrongSwan
+        Platform: Ubuntu 16.04 (Default as of Sep 2023)
+        Software: Strongswan 5.5.1+
+        IKE Version: ikev1
+
+<img width="602" alt="Screenshot 2023-09-13 at 1 53 18 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/eff5b078-ee24-48eb-8f3c-ce2742b61dab">
+
+Step 4: Download 
+
+This file will be saved in your "Downloads" foler. We will use these configurations to configure our strongswan server in the commercial cloud.
