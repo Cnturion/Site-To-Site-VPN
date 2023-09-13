@@ -84,3 +84,29 @@ Step 5: Click on the Attach to VPC button.
 <img width="1201" alt="Screenshot 2023-09-13 at 12 59 01 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/07322c88-31f4-4d76-8b00-a9c36cedd655">
 
 Once the VGW has been attached to the VPC, you can verify the association by clicking on the VGW. The VPC field will show the VPC that the VGW is associated with.
+
+# Create a Site-to-Site VPN connection
+
+Step 1: Go to the AWS Console and navigate to the Site-to-Site VPN service.
+
+Step 2: In the left navigation pane, click on Site-to-Site VPN Connections.
+
+Step 3: Click on the Create Site-to-Site VPN Connection button.
+
+Step 4: In the Create Site-to-Site VPN Connection dialog box, enter the following details:
+        
+        Name: AWS GovCloud S2SVPN
+        Target: Select the VGW that you created in the previous step.
+        Customer gateway: Select the customer gateway that you created in the previous step.
+        Routing options: Select Static.
+        Static IP prefixes: Enter the following CIDR blocks:
+            10.0.0.0/16 (GovCloud VPC)
+            10.10.0.0/16 (Commercial cloud)
+        Local IPv4 network CIDR: 10.10.0.0/16 (commercial cloud VPC CIDR)
+        Remote IPv4 CIDR: 10.0.0.0/16 (GovCloud VPC CIDR)
+        
+![Screenshot 2023-09-13 at 1 34 29 PM](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/3355ad48-8a49-45fc-a19c-344d6b9ee84e)
+
+Step 5: Click on the Create button.
+
+Once the Site-to-Site VPN connection has been created, you can verify the connection by connecting to the StrongSwan server from your on-premises network.
