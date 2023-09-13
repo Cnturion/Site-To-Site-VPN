@@ -52,4 +52,5 @@ Step 9: Connect to the instance
 
 Once the instance is launched, you can connect to it using the SSH client and the private key file that you downloaded in step 5 or using "EC2 Instance Connect"
 
-<img width="819" alt="Screenshot 2023-09-13 at 11 53 23 AM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/37e5df10-ff91-4389-8d16-9bf107407d14">
+<img width="819" alt="Screenshot 2023-09-13 at 11 53 23 AM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/e1fcf011-b356-4746-9a85-7b94ab3e2537">
+
