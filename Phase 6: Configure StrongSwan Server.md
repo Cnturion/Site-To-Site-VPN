@@ -127,6 +127,7 @@ Step 5: insert:
 
 <img width="1223" alt="Screenshot 2023-09-13 at 3 34 35 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/ba6465ad-ed05-4ac2-8116-36f4b16e97f1">
 
+Comment: The tunnels are supposed to be down. This image was taken after I configured the tunnel routes. If the status of your tunnels are "Down" that is normal.
 
 # Automate Tunnel Healthcheck and Failover
 
@@ -231,7 +232,7 @@ Step 2: AWS gives you the following script to automate healthchecks and failover
 			;;
 	esac
 
-Step3: Make the following configuration under add_route() line
+Step 3: Make the following configuration under add_route() line
 
 	Change it from:
  
@@ -246,3 +247,49 @@ Step3: Make the following configuration under add_route() line
 	IFS=',' read -ra route <<< "${TUNNEL_STATIC_ROUTE}"
     	for i in "${route[@]}"; do
 	    ip route add ${i} dev ${TUNNEL_NAME} metric ${TUNNEL_MARK} src <StrongSwan Server Private IP>
+
+<img width="1212" alt="Screenshot 2023-09-13 at 4 55 54 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/ae2b56ed-7927-403e-86ae-036305ee98cf">
+
+Step 4: Make the file executable
+
+	sudo chmod 744 /etc/ipsec.d/aws-updown.sh
+
+Step 5: Restart StrongSwan
+
+	sudo ipsec restart
+
+# Verify S2S VPN Tunnels are UP
+
+You can veify if the tunnels you configure are working by going to the GovCloud VPC and select the S2S VPN you created.
+
+Under Tunnel details you can see the "Status" as "Up"
+
+<img width="1223" alt="Screenshot 2023-09-13 at 3 34 35 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/b70e0bbd-a500-4c8b-9955-8fa6b95286f2">
+
+Congratulations! You have successfully set up a Site-to-Site VPN connection!
+
+# Common Errors
+
+If your tunnels are down check the following:
+
+1. Verify your tunnel configurations listen in /etc/ipsec.conf have the proper IKE and ESP encryption algorithms
+
+		ike=aes256-sha256-modp2048,aes128-sha1-modp1024!
+		esp=aes128-sha256-modp2048,aes128-sha1-modp1024!
+
+3. Verify your left and right subent is your VPC IPv4 CIDR of your commercial cloud and GovCloud respectively.
+
+		leftsubnet=10.10.0.0/16
+        	rightsubnet=10.0.0.0/16
+
+4. Verify your leftupdown line is uncommented and has the subnet CIDR of your VPC cloud (GovCloud)
+
+   		leftupdown="/etc/ipsec.d/aws-updown.sh -ln Tunnel1 -ll xxx.xxx.xxx.xxx/30 -lr xxx.xxx.xxx.xxx/30 -m 100 -r 10.0.0.0/16"
+
+5. Verify your configuration for Tunnel2 are also configured properly.
+
+6. Verify both if your tunnels are ESTABLISHED
+
+   		sudo ipsec status
+
+Changes made in these previous steps can take a few minutes to apply and for your tunnels to change status.
