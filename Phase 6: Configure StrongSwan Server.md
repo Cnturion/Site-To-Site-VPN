@@ -294,4 +294,6 @@ If your tunnels are down check the following:
 
 7. Verify your Source and Destination check configuration in the StrongSwan EC2 Instance is set to "Stop"
 
+8. Verify route propagation is enabled. See Phase 5.
+
 Changes made in these previous steps can take a few minutes to apply and for your tunnels to change status.
