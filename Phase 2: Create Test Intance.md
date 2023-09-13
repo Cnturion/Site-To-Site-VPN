@@ -1,6 +1,6 @@
 # Setting up a Test-Instance
 
-This EC2 Intance will be used to tst the connectivity of the two networks, the GovCloud and AWS commercial cloud. 
+This EC2 Intance will be used to test the connectivity between the two networks, the GovCloud and AWS commercial cloud. 
 
 Step 1: Go to the AWS Console
 
