@@ -34,5 +34,16 @@ This EC2 Intance will be used to tst the connectivity of the two networks, the G
 
 9. Launch Instance
 
-# Virtual Private Network: Customer Gateway
+# Virtual Private Network
 
+To establish a secure connection between commercial cloud and govcloud I will deploy a Site-to-Site VPN consisting of a customer gateway, virtual private gateway and a S2S VPN connection. The image below shows an illustration of this connection where as the "On-premises network" is GovCloud in my case.
+
+![vpn-how-it-works-vgw](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/03b7537b-86f1-4cac-839f-06b627f78b30)
+
+For a quick rundown on a S2S VPN please refer to https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html. 
+
+# Customer Gateway
+
+An AWS Customer Gateway is a virtual representation of a physical or software device that you own and operate in your on-premises network. It is used to create a secure connection between your network and an Amazon Virtual Private Cloud (VPC).
+
+When you create an AWS Customer Gateway, you provide information about your device to AWS, such as its public IP address and its BGP ASN. You also need to configure your device to work with the AWS Site-to-Site VPN connection.
