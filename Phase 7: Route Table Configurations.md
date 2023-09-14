@@ -25,3 +25,5 @@ Step 6: Click on the Save changes button.
 Once you have edited the route table, all traffic destined for the CIDR block of the GovCloud server will be routed through the StrongSwan server.
 
 To test the network connection you can ping the StrongSwan server from the "Test Instance" created in Phase 2 and vice versa.
+
+<img width="1347" alt="Screenshot 2023-09-13 at 8 06 11 PM" src="https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/13798d84-b4ec-408c-8c15-c8953569aafc">
