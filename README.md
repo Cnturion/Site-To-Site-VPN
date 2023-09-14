@@ -5,4 +5,9 @@ Recently, I was presented with a challenge that initially seemed like an easy ta
 
 First, I would like to thank the AWS community for their participation in helping me find a solution to this challenge and their mentorship.
 
+This demo is broken down into six phases and it take approximately 1.5 hours to complete.
+
+Phase 1: GovCloud VPC Set up
+
+
 ![S2S VPN Demo](https://github.com/Cnturion/Site-To-Site-VPN/assets/98136077/e0f62df2-491e-4c89-aeb5-81317a3fe53c)
